@@ -229,10 +229,12 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-	"botmanager",
+    "ping",
+    "plugins",
+    "typing",
     "tabchi"
     },
-    sudo_users = {12345678},--Sudo users
+    sudo_users = {350419590,123456789,987654321},--Sudo users
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
